@@ -24,13 +24,36 @@
         hr {
             align-self: stretch; /* 让 <hr> 沿主轴拉伸 */
             border: 2px solid rgb(152, 152, 152); /* 设置边框样式 */
-            margin: 0; /* 去掉默认的外边距 */
+            margin: 30px 0; /* 去掉默认的外边距 */
             flex-basis: 0px; /* 设置基础高度 */
             flex-grow: 0; /* 防止高度被拉伸 */
+        }
+        #testProducts {
+            width: 10vw;
+            height: 5vh;
+            border-radius: 10px;
+            background-color: #e4a63b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #testProducts:hover {
+            background-color: #ff5b15;
+        }
+        #inText {
+            font-size: 20px;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
+    <script>
+        function testPro(){
+            open('https://s.nobook.com/index.html?id=296166', '_blank');
+        }
+    </script>
+    <div id="testProducts"><span id="inText" onclick="testPro()">点击体验所有产品</span></div>
     <h1>UVS与UwLS联合开发的洗钉液</h1>
     <img src="img/Product1.png" alt="糟糕，图片找不到了">
     <hr>
